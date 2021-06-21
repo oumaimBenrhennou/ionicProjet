@@ -1,0 +1,65 @@
+
+
+<ion-header no-border style="display:none"> 
+  <div class="login-header ion-padding">
+    <img class="logo-img" src="assets/icon.png"/>
+  </div>
+</ion-header>
+
+<ion-content> 
+
+<div class="center-register">
+  <div heading-column-lr>
+    <h1 big-heading>Sign Up</h1>
+    <ion-button fill="outline" shape="round" class="buttonsignup" size="default" (click)="back()" small-heading>
+       Login
+      </ion-button>
+      
+     
+  </div>
+  
+  <ion-label class="ion-label-text">Ready to Explore Thousands of Monuments Arround the Globe</ion-label>
+   <form [formGroup]="emailPasswordForm"> 
+  <ion-item class="item-input" transparent> 
+      <ion-icon slot="start" src="assets/svg/user.svg"></ion-icon>
+        <ion-input formControlName="username" [(ngModel)]="userDetails.username" maxlength="18" minlength="6" name="username" placeholder="Username" type="text"></ion-input>
+    </ion-item>
+
+    <div *ngFor="let error of error_messages.username">
+      <ion-item lines="none" class="error-messages" *ngIf="emailPasswordForm.get('username').hasError(error.type) && (emailPasswordForm.get('username').dirty || emailPasswordForm.get('username').touched)" transparent>
+        <ion-label class="error-message">{{ error.message }}</ion-label>
+      </ion-item>
+    </div>
+
+
+    
+
+
+      <ion-item class="item-input" transparent>
+          <ion-icon slot="start" src="assets/svg/user.svg"></ion-icon>
+        <ion-input autocapitalize="none" formControlName="phone" [(ngModel)]="userDetails.phone" name="phone" placeholder="+212-XX XX XX XX" inputmode="tel"></ion-input>
+    </ion-item>
+
+
+  </form>
+    
+    <div linespace></div>
+    <div style="margin-top: 10px;margin-bottom: 10px;margin-left: auto;margin-right: auto;" id="recaptcha-container"></div>
+
+    <ion-button color="primary" class="ion-button-login" shape="round" fill="solid" size="large" expand="block"
+     (click)="register()" >Sign Up
+     <ion-icon slot="start" src="assets/svg/enter.svg"></ion-icon>
+    </ion-button>
+
+
+
+    
+
+
+
+</div>
+
+
+
+
+</ion-content>

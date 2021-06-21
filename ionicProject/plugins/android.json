@@ -1,0 +1,69 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-android-permissions": {
+      "PACKAGE_NAME": "com.monuments.apptest"
+    },
+    "cordova-plugin-androidx": {
+      "PACKAGE_NAME": "com.monuments.apptest"
+    },
+    "cordova-plugin-androidx-adapter": {
+      "PACKAGE_NAME": "com.monuments.apptest"
+    },
+    "cordova-plugin-browsertab": {
+      "PACKAGE_NAME": "com.monuments.apptest"
+    },
+    "cordova-plugin-buildinfo": {
+      "PACKAGE_NAME": "com.monuments.apptest"
+    },
+    "cordova-plugin-camera": {
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
+      "PACKAGE_NAME": "com.monuments.apptest"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.monuments.apptest"
+    },
+    "cordova-plugin-enable-multidex": {
+      "PACKAGE_NAME": "com.monuments.apptest"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.monuments.apptest"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "com.monuments.apptest"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "com.monuments.apptest"
+    },
+    "cordova-plugin-nativestorage": {
+      "PACKAGE_NAME": "com.monuments.apptest"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.monuments.apptest"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.monuments.apptest"
+    },
+    "cordova-plugin-telerik-imagepicker": {
+      "PACKAGE_NAME": "com.monuments.apptest"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.monuments.apptest"
+    },
+    "cordova.plugins.diagnostic": {
+      "ANDROIDX_VERSION": "1.+",
+      "PACKAGE_NAME": "com.monuments.apptest"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-add-swift-support": {
+      "PACKAGE_NAME": "com.monuments.apptest"
+    }
+  }
+}

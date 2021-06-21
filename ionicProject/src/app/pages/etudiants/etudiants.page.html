@@ -1,0 +1,74 @@
+
+
+<ion-header> 
+    <ion-toolbar color="primary">
+      <ion-title>Etudiants</ion-title>
+    </ion-toolbar> 
+  </ion-header>
+  
+  
+
+<ion-content  class="ion-padding" >
+  
+   
+  <ion-list>
+  
+    <ion-button class="upload"  (click)="logout()"> Log Out
+      <ion-icon name="log-out-outline"></ion-icon>
+    </ion-button>
+  
+  
+    <div class="ion-padding custom-skeleton" *ngIf="!etudiants">
+      <ion-skeleton-text class="skel1" animated ></ion-skeleton-text>
+      <ion-skeleton-text class="skel2" animated style="width: 60%"></ion-skeleton-text>
+  
+      <ion-skeleton-text class="skel1" animated ></ion-skeleton-text>
+      <ion-skeleton-text class="skel2" animated style="width: 60%"></ion-skeleton-text>
+
+      <ion-skeleton-text class="skel1" animated ></ion-skeleton-text>
+      <ion-skeleton-text class="skel2" animated style="width: 60%"></ion-skeleton-text>
+  
+      <ion-skeleton-text class="skel1" animated ></ion-skeleton-text>
+      <ion-skeleton-text class="skel2" animated style="width: 60%"></ion-skeleton-text>
+
+      <ion-skeleton-text class="skel1" animated ></ion-skeleton-text>
+      <ion-skeleton-text class="skel2" animated style="width: 60%"></ion-skeleton-text>
+  
+      <ion-skeleton-text class="skel1" animated ></ion-skeleton-text>
+      <ion-skeleton-text class="skel2" animated style="width: 60%"></ion-skeleton-text>
+
+      <ion-skeleton-text class="skel1" animated ></ion-skeleton-text>
+      <ion-skeleton-text class="skel2" animated style="width: 60%"></ion-skeleton-text>
+  
+      <ion-skeleton-text class="skel1" animated ></ion-skeleton-text>
+      <ion-skeleton-text class="skel2" animated style="width: 60%"></ion-skeleton-text>
+
+      <ion-skeleton-text class="skel1" animated ></ion-skeleton-text>
+      <ion-skeleton-text class="skel2" animated style="width: 60%"></ion-skeleton-text>
+  
+      <ion-skeleton-text class="skel1" animated ></ion-skeleton-text>
+      <ion-skeleton-text class="skel2" animated style="width: 60%"></ion-skeleton-text>
+    </div>
+    <div *ngIf="etudiants == 'aucun'">
+          <ion-label >Aucun etudiant trouvé !!</ion-label>
+    </div>
+    <div *ngIf="etudiants && etudiants != 'aucun'">
+    <ion-card *ngFor="let etudiant of etudiants">
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="assets/profile.png">
+        </ion-thumbnail>
+        <ion-label>
+          <h2><span>Nom : </span>{{etudiant.nom}}</h2>
+          <p><span>Join Date : </span>{{etudiant.date}}</p>
+        </ion-label>
+      </ion-item>
+    </ion-card>
+    </div>
+  
+  </ion-list>
+   
+   
+   </ion-content> 
+   
+   

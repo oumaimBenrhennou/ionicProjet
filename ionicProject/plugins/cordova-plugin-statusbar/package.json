@@ -1,0 +1,78 @@
+{
+  "_from": "git+https://github.com/breautek/cordova-plugin-statusbar.git#issue-110-statusbar-overlay-keyboard-resize",
+  "_id": "cordova-plugin-statusbar@2.4.3-dev",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-statusbar",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/breautek/cordova-plugin-statusbar.git#issue-110-statusbar-overlay-keyboard-resize",
+    "rawSpec": "https://github.com/breautek/cordova-plugin-statusbar.git#issue-110-statusbar-overlay-keyboard-resize",
+    "saveSpec": "git+https://github.com/breautek/cordova-plugin-statusbar.git#issue-110-statusbar-overlay-keyboard-resize",
+    "fetchSpec": "https://github.com/breautek/cordova-plugin-statusbar.git",
+    "gitCommittish": "issue-110-statusbar-overlay-keyboard-resize"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "git+https://github.com/breautek/cordova-plugin-statusbar.git#779e7f0425ca77232002df0ceb67ce19dd24cc7f",
+  "_spec": "https://github.com/breautek/cordova-plugin-statusbar.git#issue-110-statusbar-overlay-keyboard-resize",
+  "_where": "C:\\Users\\ASUS\\Downloads\\Ionic\\Chatzee",
+  "author": {
+    "name": "Apache Software Foundation"
+  },
+  "bugs": {
+    "url": "https://issues.apache.org/jira/browse/CB"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-statusbar",
+    "platforms": [
+      "android",
+      "ios",
+      "wp7",
+      "wp8",
+      "windows"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova StatusBar Plugin",
+  "devDependencies": {
+    "jshint": "^2.6.0"
+  },
+  "engines": {
+    "cordovaDependencies": {
+      "0.1.0": {
+        "cordova": ">=3.0.0"
+      },
+      "3.0.0": {
+        "cordova": ">100"
+      }
+    }
+  },
+  "homepage": "https://github.com/apache/cordova-plugin-statusbar#readme",
+  "keywords": [
+    "cordova",
+    "statusbar",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-wp7",
+    "cordova-wp8",
+    "cordova-windows"
+  ],
+  "license": "Apache-2.0",
+  "name": "cordova-plugin-statusbar",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apache/cordova-plugin-statusbar.git"
+  },
+  "scripts": {
+    "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src && node node_modules/jshint/bin/jshint tests",
+    "test": "npm run jshint"
+  },
+  "types": "./types/index.d.ts",
+  "version": "2.4.3-dev"
+}

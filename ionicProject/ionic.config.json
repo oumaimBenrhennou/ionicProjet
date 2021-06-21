@@ -1,0 +1,7 @@
+{
+  "name": "monuments",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

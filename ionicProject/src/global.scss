@@ -1,0 +1,612 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+// by hassan emoji
+//@import '~@ctrl/ngx-emoji-mart/picker';
+
+
+app-notifications{
+  background: ghostwhite !important;
+}
+app-timeline{
+  background: #f8f9fa !important;
+}
+
+ion-refresher{
+  .refresher-pulling-text{
+    font-family: 'Quicksand';
+  }
+}
+//// for tabs
+.ion-page{
+    background: transparent;
+  }
+ng-progress{
+  position: relative;
+    display: block;
+  .ng-progress-bar{
+    position: relative;
+    .ng-bar-placeholder{
+      height: 5px;
+    }
+  }
+}
+.ion-searchbar-searchpage .searchbar-input-container{
+  .searchbar-input{
+    border-radius: 25px !important;
+    background: #e9ecef !important;
+    color: black !important;
+  }
+  ion-icon{color: black !important}
+}
+
+  /// action sheet search page
+.my-alert {
+    --background: rgb(179, 179, 223);
+    --background-selected: rgb(179, 179, 223);
+}
+.my-modal-account-save{
+  --background: transparent !important;
+  .modal-wrapper{
+    width: 90%;
+    height: fit-content;
+    min-height: 450px;
+    max-height: 95%;
+    border-radius: 20px;
+  }
+}
+
+.ion-img-viewer{
+  img{
+    min-height: 1px !important;
+    max-height: 90vh;
+  }
+}
+
+.userinfo-page{
+  --background: transparent !important;
+  .modal-wrapper{
+    background: transparent !important;
+    .ion-page{
+      background: rgba(43, 45, 66, 0.85);
+      ion-refresher{
+        color: white !important;
+        display: block;
+        position: relative;
+          ion-refresher-content{
+            display: block;
+            margin-top: 20px;
+            .refresher-pulling-text{
+              color: white;
+              font-family: 'Josefin-Regular';
+            }
+            .refresher-refreshing{
+
+              ion-spinner{
+                color: white !important;
+              }
+              .refresher-refreshing-text{
+                color: white !important;
+                font-family: "Ltim" !important;
+              }
+
+            }
+          }
+    
+      }
+
+    }
+  }
+}
+.my-modal-css-comment{
+--background: transparent !important;
+     .modal-wrapper{
+    height: 90%;
+    width: 90%;
+    position: absolute;
+    display: block;
+    border-radius: 10px;
+      }
+}
+
+.my-modal-css-edit-des{
+  --background: transparent !important;
+       .modal-wrapper{
+      height: 50%;
+      max-height: 250px;
+      min-height: 230px;
+      width: 95%;
+      box-shadow: none;
+      max-width: 360px;
+      position: absolute;
+      display: block;border-radius: 10px;
+      .ion-page{
+        margin: auto;
+      }
+        }
+  }
+
+  .my-modal-css-edit-username{
+    --background: transparent !important;
+         .modal-wrapper{
+        height: 50%;
+        max-height: 140px;
+        min-height: 120px;
+        width: 95%;
+        box-shadow: none;
+        max-width: 360px;
+        position: absolute;
+        display: block;border-radius: 10px;
+        .ion-page{
+          margin: auto;
+        }
+          }
+    }
+    .room-message-modal{
+      .modal-wrapper{
+        min-width: 95%;
+        min-height: 95%;
+      }
+    }
+
+
+.my-modal-room-online{
+  --background: transparent !important;
+       .modal-wrapper{
+      height: 90%;
+      width: 90%;
+      box-shadow: none;
+      position: absolute;
+      display: block;border-radius: 10px;
+      border: 3px solid aquamarine;
+        }
+  }
+
+
+  .stickers-modal{
+    --background: transparent !important;
+         .modal-wrapper{
+           border-radius: 15px;
+          }
+    }
+
+
+    .alert-design{
+      .alert-wrapper{
+          .alert-head{
+          .alert-title{
+            font-family: 'Poppins-Bold';
+          }
+        }
+        .alert-message{ 
+          font-family: 'Righteous-Regular';
+         text-align: justify;
+        }
+        .alert-button-group{
+          .cancel-button , .save-button{
+            font-family: 'Poppins-Bold';
+          }
+  
+        }
+      }
+    }
+
+    .alert-design-x{
+      .alert-wrapper{
+          .alert-head{
+          .alert-title{
+            font-family: 'Poppins-Bold';
+          }
+        }
+        .alert-message{ 
+          font-family: 'Righteous-Regular';
+         text-align: justify;
+        }
+        .alert-input-group{
+           .input-opassword,.input-npassword,.input-email,.input-username{
+            font-family: 'Poppins-Bold';
+           }
+        }
+
+        .alert-button-group{
+          .cancel-button , .save-button{
+            font-family: 'Poppins-Bold';
+          }
+  
+        }
+      }
+    }
+
+
+  .alert-socialmedia-insta{
+    .alert-wrapper{
+      background: rgb(255,0,144);
+      background: linear-gradient(120deg, rgba(255,0,144,1) 0%, rgba(226,29,96,1) 100%);
+      border-radius: 8px;
+      box-shadow: 0 3px 1px -2px #ff0056, 0 2px 2px 0 #ff0056, 0 1px 5px 0 #ff0056;
+      border: none;
+      padding-bottom: 10px;
+    }
+  }
+
+  .alert-socialmedia-snapchat{
+    .alert-wrapper{
+      background: rgb(255,252,0);
+      background: linear-gradient(120deg, rgba(255,252,0,1) 0%, rgba(254,251,0,1) 100%);
+        border-radius: 8px;
+        box-shadow: 0 3px 1px -2px #FFFC00, 0 2px 2px 0 #FFFC00, 0 1px 5px 0 #FFFC00;
+        border: none;
+        padding-bottom: 10px;
+        .alert-head{
+        .alert-title{
+          color: black !important;
+        }
+      }
+      .alert-message{
+        color: black !important;
+      }
+      .alert-button-group{
+        .cancel-button , .save-button{
+          color: black !important;
+          border: 1px solid black !important;
+        }
+
+      }
+    }
+  }
+  .alert-socialmedia-tiktok{
+    .alert-wrapper{
+      background: rgb(0, 0, 0);
+      background: linear-gradient(120deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+      border-radius: 8px;
+      box-shadow: 0 3px 1px -2px #000000, 0 2px 2px 0 #000000, 0 1px 5px 0 #000000;
+      border: none;
+      padding-bottom: 10px;
+    }
+  }
+
+  .alert-socialmedia-insta, .alert-socialmedia-snapchat, .alert-socialmedia-tiktok{
+    .alert-wrapper{
+      .alert-head{
+        text-align: center;
+        .alert-title{
+          color: white;
+          font-family: 'Caveat-regular';
+          font-size: 2em;
+        }
+      }
+      .alert-message{
+        color: white;
+        font-family: 'Josefin-regular';
+        margin-top: 10px;
+      }
+      .alert-input-group{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-inline-start: 15px;
+        padding-inline-end: 15px;
+        input{
+          color: #8a8a8a;
+          display: block;
+          height: 38px;
+          padding: 1px 5%;
+          border: 1px solid #ccc;
+          -moz-border-radius: 27px;
+          -webkit-border-radius: 27px;
+          border-radius: 27px;
+          -moz-background-clip: padding;
+          -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+          background-color: #fff;
+          font-family: 'HelveticaNeue','Arial', sans-serif;
+          font-size: 105%;
+          letter-spacing: .8px;
+        }
+      }
+      .alert-button-group{
+
+        .cancel-button , .save-button{
+          color: white;
+          background: transparent;
+          border: 1px solid white;
+          border-radius: 26px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          height: 32px;
+          font-family: 'Lato-Black';
+        }
+
+      }
+      
+    }
+  }
+
+  .custom-error-alert{
+    .alert-wrapper{
+      .alert-head{
+        h2{font-family: 'Poppins-Bold';
+          text-align: center;}
+      }
+      .alert-message{
+        font-family: 'Righteous-Regular';
+      }
+      .alert-button-group{
+        button{
+          font-family: 'Poppins-Bold';
+        }
+
+      }
+    }
+  }
+
+
+  .set-desc-css{
+    .alert-wrapper{
+      .alert-head{
+        text-align: center;
+        font-family: 'Ltim';
+      }
+      .alert-button-group{
+        .cancel-button{
+          color: black;
+          background: blanchedalmond;
+          border-radius: 26px;
+        }
+        .alert-input-group{
+          -webkit-padding-start: 8px;
+          -webkit-padding-end: 8px;
+        }
+        .save-button{
+          color: black;
+          background: aqua;
+          border-radius: 26px;
+        } 
+      }
+      .alert-input-group{
+        padding-inline-start: 8px;
+        padding-inline-end: 8px;
+      }
+    }
+  }
+
+
+  ion-alert.settings-fam{
+    .alert-wrapper{
+      .alert-head{
+        h2{
+          text-align: center;
+          font-family: 'Quicksand' !important;
+          font-size: 1.1em !important;
+        }
+        
+      }
+      .alert-radio-group{
+        button:nth-child(1) {
+          font-family: 'Josefin-Regular';
+        }
+        button:nth-child(2) {
+          font-family: 'Sriracha';
+        }
+        button:nth-child(3) {
+          font-family: 'Righteous-Regular';
+        }
+        button:nth-child(4) {
+          font-family: 'Trade_Winds';
+        }
+        button:nth-child(5) {
+          font-family: 'Dancing_Script';
+        }
+        
+      }
+      .alert-input-group{
+        padding-inline-start: 8px;
+        padding-inline-end: 8px;
+      }
+    }
+  }
+
+
+  ion-alert.settings-dec{
+    .alert-wrapper{
+      .alert-head{
+        h2{
+          text-align: center;
+          font-family: 'Quicksand' !important;
+          font-size: 1.1em !important;
+        }
+        
+      }
+      .alert-radio-group{
+        button:nth-child(1) {
+          font-family: 'Sriracha';
+        }
+        button:nth-child(2) {
+          font-family: 'Sriracha';
+          text-decoration-line: underline;
+        }
+        button:nth-child(3) {
+          font-family: 'Sriracha';
+          text-decoration-line: line-through;
+        }
+        
+      }
+      .alert-input-group{
+        padding-inline-start: 8px;
+        padding-inline-end: 8px;
+      }
+    }
+  } 
+
+  ion-alert.settings-sort{
+    .alert-wrapper{
+      .alert-head{
+        h2{
+          text-align: center;
+          font-family: 'Quicksand' !important;
+          font-size: 1.1em !important;
+        }
+        
+      }
+      .alert-radio-group{
+        font-family: 'Lato-Black';
+        
+      }
+      .alert-input-group{
+        padding-inline-start: 8px;
+        padding-inline-end: 8px;
+      }
+    }
+  }
+
+ app-friends{
+   background: #fdfffc !important;
+ }
+
+  .message-input{
+    textarea{max-height: 200px !important;min-height: 42px !important;}
+  }
+
+ 
+
+
+@media only screen and (max-width: 400px) {
+  .content-photo {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 400px) {
+  .content-photo {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 480px) {
+  .content-photo {
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .content-photo {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+  }
+}
+
+
+
+tag-input{ 
+  .ng2-tag-input{
+    padding: 5px;
+    border-radius: 0px;
+    border-bottom: none !important;
+    tag{
+      border-radius: 10px !important;
+      opacity: 1;
+    color: #393e46 !important;
+    background: #e1e5ea !important;
+    font-family: 'Boogaloo' !important;
+    letter-spacing: 1px;
+    /* margin-top: 12px; */
+    padding: 0px 6px;
+        svg{
+          path{
+            fill: black !important;
+          }
+    }
+    
+     
+    }
+  }
+  .ng2-tag-input__text-input{
+    font-family: 'Josefin-Regular' !important;
+  }
+}
+
+
+
+//// childs
+
+.content-child-post{
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 98%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+    .post-card{
+      // display: table-cell;
+      // vertical-align: middle;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+  .content-child-post{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 98%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+      .post-card{
+        // display: table-cell;
+        // vertical-align: middle;
+      }
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .content-child-post{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 98%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+      min-width: 40vw;
+      .post-card{
+        // display: table-cell;
+        // vertical-align: middle;
+      }
+  }
+}
+
+
+
+

@@ -1,0 +1,69 @@
+
+<ion-header> 
+  <ion-toolbar color="primary">
+    <ion-title>Monuments</ion-title>
+    <ion-buttons slot="end">
+      <ion-button tappable style="color: #fff;" (click)="add()">
+        ADD<ion-icon name="add-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar> 
+</ion-header>
+
+
+<ion-content>
+
+  <ion-list class="top-list">
+
+      <!--<div class="top-div"><div class="top-div-inside"></div></div>-->
+  
+  
+    
+     
+
+  
+      <!-- <ion-label class="popular-tags">Popular #Tags :</ion-label>
+      <ion-slides pager="false" [options]="slideOpts" slidesPerView="4" *ngIf="tags">
+          <ion-slide *ngFor="let tag of tags; let index = index" class="tag-slide">
+              
+              <ion-chip class="chip-tag" (click)="viewPostsTag(tag.name)">
+                  <ion-icon *ngIf="tag.src == true" src="{{tag.icon}}" ></ion-icon>
+                  <ion-icon *ngIf="tag.src != true" name="{{tag.icon}}" ></ion-icon>
+                  <ion-label color="secondary" class="tag-text">{{tag.name}}</ion-label>
+              </ion-chip>
+            
+          </ion-slide> 
+      </ion-slides> --> 
+
+  
+  
+      <div id="map"></div>
+    
+    <ion-card class="card-monument" *ngFor="let monument of monuments; let i = index">
+      <div (click)="open_monument(monument)">
+
+        <ion-img [src]="get_image(i)"></ion-img>
+        <ion-item>
+         <ion-label class="title">Monument :</ion-label> <ion-label class="value">{{monument.nom}}</ion-label>
+        </ion-item>
+        <ion-item>
+         <ion-label class="title">Ville :</ion-label><ion-label class="value">{{monument.ville}}</ion-label>
+       </ion-item>
+
+      </div>
+     
+    </ion-card>
+  
+    
+    <!-- <ion-grid class="grid-images" >
+  
+      <ion-row >
+        <ng-template  #viewContainerRef></ng-template>
+      </ion-row>
+    </ion-grid>  -->
+  
+  
+  
+    </ion-list>
+    
+  </ion-content>

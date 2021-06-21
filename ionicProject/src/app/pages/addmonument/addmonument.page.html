@@ -1,0 +1,56 @@
+
+
+
+<ion-content  class="ion-padding" >
+ <ion-button class="close" (click)="close()"><ion-icon name="close-outline"></ion-icon></ion-button>
+<ion-list>
+
+  <ion-label class="title">Add a monument to Database</ion-label>
+
+
+  <ion-button class="upload" *ngIf="url == null || url == ''" (click)="setImageGallery()"> Upload Photo
+    <ion-icon slot="start" name="camera"></ion-icon>
+  </ion-button>
+<ion-card *ngIf="url" style="box-shadow: none;--background: transparent;">
+<ion-item style="--background: transparent;">
+    <img src="{{url}}">
+</ion-item> 
+
+
+
+  
+</ion-card>
+
+ <ion-item class="item-input" transparent> 
+  <ion-icon name="information-circle-outline"></ion-icon>
+       <ion-input  [(ngModel)]="nom" maxlength="100" minlength="4" name="nom" placeholder="Nom" type="text"></ion-input>
+   </ion-item>
+
+
+
+   <ion-item class="item-input" transparent> 
+    <ion-icon name="information-circle-outline"></ion-icon>
+      <ion-input  [(ngModel)]="ville" maxlength="60" minlength="6" name="ville" placeholder="Ville" type="text"></ion-input>
+  </ion-item>
+
+
+  <ion-item class="item-input" transparent> 
+    <ion-icon name="information-circle-outline"></ion-icon>
+      <ion-input  [(ngModel)]="latitude" maxlength="60" minlength="6" name="latitude" placeholder="Latitude" type="text"></ion-input>
+  </ion-item>
+
+
+  <ion-item class="item-input" transparent> 
+    <ion-icon name="information-circle-outline"></ion-icon>
+      <ion-input  [(ngModel)]="longitude" maxlength="60" minlength="2" name="longitude" placeholder="Longitude" type="text"></ion-input>
+  </ion-item>
+
+ 
+
+
+    <ion-button class="post" fill="outline" shape="round" (click)="PostPhoto()">Post Monument</ion-button>
+
+  </ion-list>
+
+</ion-content> 
+

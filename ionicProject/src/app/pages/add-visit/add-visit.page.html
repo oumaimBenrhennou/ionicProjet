@@ -1,0 +1,38 @@
+
+
+
+<ion-content  class="ion-padding" >
+  <ion-button class="close" (click)="close()"><ion-icon name="close-outline"></ion-icon></ion-button>
+ <ion-list>
+ 
+   <ion-label class="title">Post Your Visit of The Monument</ion-label>
+ 
+ 
+   <ion-button class="upload" *ngIf="url == null || url == ''" (click)="setImageGallery()"> Upload Photo
+     <ion-icon slot="start" name="camera"></ion-icon>
+   </ion-button>
+ <ion-card *ngIf="url" style="box-shadow: none;--background: transparent;">
+ <ion-item style="--background: transparent;">
+     <img src="{{url}}">
+ </ion-item> 
+ 
+ 
+ 
+   
+ </ion-card>
+ 
+ 
+  <ion-item class="item-input" transparent> 
+   <ion-icon name="information-circle-outline"></ion-icon>
+        <ion-textarea  [(ngModel)]="description" maxlength="600" minlength="0" name="nom" placeholder="tell us know something about your visit" type="text"></ion-textarea>
+    </ion-item>
+ 
+ 
+ 
+     <ion-button class="post" fill="outline" shape="round" (click)="PostVisit()">Post Visit</ion-button>
+ 
+   </ion-list>
+ 
+ </ion-content> 
+ 
+ 

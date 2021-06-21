@@ -1,0 +1,66 @@
+
+
+
+<ion-content  class="ion-padding" >
+  <ion-button class="close" (click)="close()"><ion-icon name="close-outline"></ion-icon></ion-button>
+ <ion-list>
+ 
+  <ion-card>
+   <ion-label class="title">{{title}}</ion-label>
+ 
+   <ion-card>
+    <ion-img [src]="image"></ion-img>
+   </ion-card>
+
+ 
+   
+ </ion-card>
+ <ion-label class="label-location">this monument is located at the city : {{ville}}</ion-label>
+
+ 
+<ion-list>
+
+  <ion-label class="visits">Visits :</ion-label>
+
+  <ion-button class="upload"  (click)="add_visit()"> Add My Visit
+    <ion-icon slot="start" name="camera"></ion-icon>
+  </ion-button>
+
+
+  <ion-button *ngIf="visits == 'error'">Get Visits</ion-button>
+  <div class="ion-padding custom-skeleton" *ngIf="!visits">
+    <ion-skeleton-text class="skel1" animated ></ion-skeleton-text>
+    <ion-skeleton-text class="skel2" animated style="width: 60%"></ion-skeleton-text>
+    <ion-skeleton-text class="skel3" animated style="width: 80%"></ion-skeleton-text>
+
+    <ion-skeleton-text class="skel1" animated ></ion-skeleton-text>
+    <ion-skeleton-text class="skel2" animated style="width: 60%"></ion-skeleton-text>
+    <ion-skeleton-text class="skel3" animated style="width: 80%"></ion-skeleton-text>
+  </div>
+  <div *ngIf="visits == 'aucun'">
+        <ion-label >Aucun visite a été enregistrer pour cette monument</ion-label>
+  </div>
+  <div *ngIf="visits && visits != 'aucun'">
+  <ion-card *ngFor="let visit of visits">
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="assets/profile.png">
+      </ion-thumbnail>
+      <ion-label>
+        <h2><span>Visitor : </span>{{visit.nom}}</h2>
+        <p><span>Date : </span>{{visit.date}}</p>
+      </ion-label>
+    </ion-item>
+    <ion-card>
+      <ion-img [src]="visit.img"></ion-img>
+    </ion-card>
+  </ion-card>
+  </div>
+
+</ion-list>
+ 
+   </ion-list>
+ 
+ </ion-content> 
+ 
+ 

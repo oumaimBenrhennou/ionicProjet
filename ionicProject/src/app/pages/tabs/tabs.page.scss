@@ -1,0 +1,76 @@
+.tab-selected{
+    color: white !important;
+}
+.tab-selected .tubelight{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    transition: left 400ms ease;
+    z-index: 10;
+    right: 0;
+    background: white;
+}
+.tab-selected .light-ray{
+    position: absolute;
+    left: -30%;
+    top: 5px;
+    width: 160%;
+    height: 80px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.25) -50%, rgba(255,255,255,0) 90%);
+    clip-path: polygon(5% 100%, 25% 0px, 75% 0px, 95% 100%);
+}
+ion-fab{
+    bottom: 20px;
+    margin-inline-start: -23px;
+}
+ion-fab-button{
+    height: 46px;
+    width: 46px;
+}
+ion-tab-bar{
+    padding-top: 0 !important;
+    position: absolute;
+    bottom: 0px;
+    width: 98%;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+.custom{
+    position: absolute !important;
+    bottom: 0 !important;
+    width: 90% !important;
+    min-width: 96% !important;
+    //--background: rgb(0 0 0 / 76%) !important;
+    align-self: center !important;
+    border-radius: 14px !important;
+    margin-bottom: 4px !important;
+    padding-bottom: 4px !important;
+    --background: #2b2d42  !important;
+    filter: drop-shadow(0 0 0.5rem rgba(0,0,0,0.1)) drop-shadow(0 0 0.25rem rgba(0,0,0,0.1));
+}
+ion-tab-bar{
+    height: 43px;
+    min-width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    --background: #000000;
+    --background: linear-gradient(to right, #000000, #434343) !important;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    }
+ion-tab-button{
+    --background: transparent;
+    color: darkgray;
+    --ripple-color: white !important;
+    --color-selected: white !important;
+    ion-label{
+        font-family: 'Karla';
+    }
+}
